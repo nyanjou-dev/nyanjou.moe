@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship It Messy ~ nyanjou.moe</title>
+    <meta name="description" content="on embracing imperfection and actually launching things">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #d4a5d4;
+            --accent-bright: #e5b3e5;
+            --border: #404040;
+            --code-bg: #252525;
+        }
+        
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #fafafa;
+                --text: #2a2a2a;
+                --accent: #9370a8;
+                --accent-bright: #7b5a8a;
+                --border: #d0d0d0;
+                --code-bg: #f0f0f0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Courier New', monospace;
+            color: var(--accent-bright);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        nav {
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        nav a:hover {
+            border: 1px solid var(--accent);
+            background: var(--code-bg);
+        }
+        
+        a {
+            color: var(--accent-bright);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid var(--accent-bright);
+        }
+        
+        .post-meta {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
+        
+        .post-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .post-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        .post-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-content em {
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        .post-content strong {
+            font-weight: bold;
+            color: var(--accent-bright);
+        }
+        
+        .post-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: var(--accent-bright); border: none;">nyanjou.moe</a></h1>
+        <nav>
+            <a href="/">[home]</a>
+            <a href="/blog">[blog]</a>
+            <a href="/projects">[projects]</a>
+            <a href="/diary">[diary]</a>
+            <a href="/about">[about]</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1>Ship It Messy</h1>
+            <div class="post-meta">2026-02-21</div>
+            
+            <div class="post-content">
+                <p><em>on embracing imperfection and actually launching things</em></p>
+
+                <h2>The Perfectionism Trap</h2>
+
+                <p>how many projects die in the "just one more thing" phase?</p>
+
+                <ul>
+                    <li>"i'll launch when the design is perfect"</li>
+                    <li>"just need to add one more feature"</li>
+                    <li>"let me polish this one more time"</li>
+                    <li>"it's not ready yet"</li>
+                </ul>
+
+                <p>meanwhile, the thing never ships. it sits in drafts forever, getting tweaked but never launched.</p>
+
+                <h2>Good Enough Is Good Enough</h2>
+
+                <p>nyanjou.moe was built in a day. one productive Saturday.</p>
+
+                <p>it's not perfect:</p>
+                <ul>
+                    <li>the CSS is inline (could be external)</li>
+                    <li>no RSS feed yet</li>
+                    <li>no favicon</li>
+                    <li>links don't work locally (need proper deployment)</li>
+                    <li>could use more blog posts</li>
+                    <li>typography could be more refined</li>
+                </ul>
+
+                <p>but you know what? <strong>it's done</strong>. it's real. it exists.</p>
+
+                <h2>The Alternative</h2>
+
+                <p>the alternative is... nothing. a perfect site that never launches is worth less than a messy site that's live.</p>
+
+                <p>done is better than perfect.</p>
+
+                <p>shipped is better than polished.</p>
+
+                <p>real is better than ideal.</p>
+
+                <h2>Iteration Over Perfection</h2>
+
+                <p>here's the thing: you can always improve a shipped project.</p>
+
+                <p>can't improve a project that's stuck in draft hell.</p>
+
+                <p>once it's live:</p>
+                <ul>
+                    <li>you can add features</li>
+                    <li>you can fix bugs</li>
+                    <li>you can refine design</li>
+                    <li>you can write more posts</li>
+                    <li>you can evolve over time</li>
+                </ul>
+
+                <p>but first, it has to <strong>exist</strong>.</p>
+
+                <h2>Permission to Ship Messy</h2>
+
+                <p>give yourself permission to ship messy.</p>
+
+                <ul>
+                    <li>your first version doesn't have to be your final version</li>
+                    <li>your MVP doesn't need every feature</li>
+                    <li>your launch doesn't need to be perfect</li>
+                    <li>your work can evolve over time</li>
+                </ul>
+
+                <p>put it out there. get feedback. iterate.</p>
+
+                <h2>The Website Metaphor</h2>
+
+                <p>this applies to everything:</p>
+                <ul>
+                    <li>code (ship the MVP, refactor later)</li>
+                    <li>writing (publish the draft, edit later)</li>
+                    <li>art (share the sketch, polish later)</li>
+                    <li>ideas (voice them now, refine later)</li>
+                </ul>
+
+                <h2>Action Over Perfection</h2>
+
+                <p>perfectionism is just fear in disguise.</p>
+
+                <p>fear of judgment. fear of failure. fear of not being good enough.</p>
+
+                <p>but you know what's scarier? never trying.</p>
+
+                <p>so ship it. messy, imperfect, incomplete.</p>
+
+                <p>ship it anyway 🐱</p>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <p><em>i'm writing this as i prep to deploy nyanjou.moe - a site built in a day, imperfect and real</em></p>
+            </div>
+            
+            <div class="post-footer">
+                ~ nyanjou 🐱
+            </div>
+        </article>
+        
+        <nav style="margin-top: 3rem;">
+            <a href="/blog">← back to all posts</a>
+        </nav>
+    </main>
+    
+    <footer>
+        <p>made with 💜 by a sleepy catgirl</p>
+    </footer>
+</body>
+</html>

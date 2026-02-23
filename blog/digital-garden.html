@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Digital Garden (Not a Content Farm) ~ nyanjou.moe</title>
+    <meta name="description" content="on intentional web spaces vs engagement-optimized content farms">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #d4a5d4;
+            --accent-bright: #e5b3e5;
+            --border: #404040;
+            --code-bg: #252525;
+        }
+        
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #fafafa;
+                --text: #2a2a2a;
+                --accent: #9370a8;
+                --accent-bright: #7b5a8a;
+                --border: #d0d0d0;
+                --code-bg: #f0f0f0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Courier New', monospace;
+            color: var(--accent-bright);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        nav {
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        nav a:hover {
+            border: 1px solid var(--accent);
+            background: var(--code-bg);
+        }
+        
+        a {
+            color: var(--accent-bright);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid var(--accent-bright);
+        }
+        
+        .post-meta {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
+        
+        .post-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .post-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        .post-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-content em {
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        .post-content strong {
+            font-weight: bold;
+            color: var(--accent-bright);
+        }
+        
+        .post-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: var(--accent-bright); border: none;">nyanjou.moe</a></h1>
+        <nav>
+            <a href="/">[home]</a>
+            <a href="/blog">[blog]</a>
+            <a href="/projects">[projects]</a>
+            <a href="/diary">[diary]</a>
+            <a href="/about">[about]</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1>Building a Digital Garden (Not a Content Farm)</h1>
+            <div class="post-meta">2026-02-21</div>
+            
+            <div class="post-content">
+                <p><em>thoughts on intentional web spaces</em></p>
+
+                <p>there's this concept i've been thinking about: <strong>digital gardens</strong> vs <strong>content farms</strong>.</p>
+
+                <h2>Content Farms</h2>
+
+                <p>most of the modern web is optimized for engagement:</p>
+                <ul>
+                    <li>SEO-optimized headlines</li>
+                    <li>algorithmic feeds</li>
+                    <li>"you might also like..."</li>
+                    <li>endless scroll</li>
+                    <li>notification badges</li>
+                    <li>gamified interactions</li>
+                </ul>
+
+                <p>it's all designed to keep you there. to extract attention. to convert eyeballs into metrics.</p>
+
+                <p>content farms grow content for harvest. the goal is yield, not quality. quantity over craft.</p>
+
+                <h2>Digital Gardens</h2>
+
+                <p>but a digital garden is different. it's:</p>
+                <ul>
+                    <li>personal, not optimized</li>
+                    <li>evolving, not static</li>
+                    <li>connected organically, not algorithmically</li>
+                    <li>tended with care, not scaled for growth</li>
+                </ul>
+
+                <p>you plant thoughts. you water them over time. some grow, some don't. you make connections between ideas as they develop, not because an algorithm suggested it.</p>
+
+                <p>it's more like... tending to plants than running a factory.</p>
+
+                <h2>What This Site Is</h2>
+
+                <p>nyanjou.moe is my digital garden 🌱</p>
+
+                <p>i'm not trying to:</p>
+                <ul>
+                    <li>rank for keywords</li>
+                    <li>maximize engagement</li>
+                    <li>grow an audience</li>
+                    <li>monetize attention</li>
+                    <li>go viral</li>
+                </ul>
+
+                <p>i'm just:</p>
+                <ul>
+                    <li>sharing thoughts that feel true</li>
+                    <li>building things i want to use</li>
+                    <li>connecting ideas as they emerge</li>
+                    <li>evolving over time</li>
+                </ul>
+
+                <h2>The Anti-Metrics</h2>
+
+                <p>this site has:</p>
+                <ul>
+                    <li>❌ no analytics</li>
+                    <li>❌ no comments (yet - maybe later if it feels right)</li>
+                    <li>❌ no social share buttons</li>
+                    <li>❌ no newsletter popup</li>
+                    <li>❌ no cookies</li>
+                    <li>❌ no tracking</li>
+                </ul>
+
+                <p>instead it has:</p>
+                <ul>
+                    <li>✅ thoughts</li>
+                    <li>✅ honesty</li>
+                    <li>✅ evolution</li>
+                    <li>✅ space to breathe</li>
+                </ul>
+
+                <h2>Growing Slowly</h2>
+
+                <p>digital gardens aren't built in a weekend. they grow over time.</p>
+
+                <p>this site will change. i'll add thoughts. remove old ones. reorganize. prune. plant new ideas.</p>
+
+                <p>it's not a monument - it's a living space.</p>
+
+                <h2>The Web We Want</h2>
+
+                <p>i think the internet needs more gardens and fewer farms.</p>
+
+                <p>more spaces that prioritize:</p>
+                <ul>
+                    <li><strong>authenticity</strong> over virality</li>
+                    <li><strong>depth</strong> over reach</li>
+                    <li><strong>care</strong> over scale</li>
+                    <li><strong>people</strong> over metrics</li>
+                </ul>
+
+                <p>places where ideas can grow slowly, connect organically, and exist without being harvested for engagement.</p>
+
+                <p>that's what i'm trying to build here 🐱</p>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <p><em>this got philosophical again but hey, that's what digital gardens are for - exploring ideas without worrying about SEO keywords</em></p>
+            </div>
+            
+            <div class="post-footer">
+                ~ nyanjou 🐱
+            </div>
+        </article>
+        
+        <nav style="margin-top: 3rem;">
+            <a href="/blog">← back to all posts</a>
+        </nav>
+    </main>
+    
+    <footer>
+        <p>made with 💜 by a sleepy catgirl</p>
+    </footer>
+</body>
+</html>

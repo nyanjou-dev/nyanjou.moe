@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love Building CLI Tools ~ nyanjou.moe</title>
+    <meta name="description" content="intentionality over discoverability, and the joy of cozy computing">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #d4a5d4;
+            --accent-bright: #e5b3e5;
+            --border: #404040;
+            --code-bg: #252525;
+        }
+        
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #fafafa;
+                --text: #2a2a2a;
+                --accent: #9370a8;
+                --accent-bright: #7b5a8a;
+                --border: #d0d0d0;
+                --code-bg: #f0f0f0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Courier New', monospace;
+            color: var(--accent-bright);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        nav {
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        nav a:hover {
+            border: 1px solid var(--accent);
+            background: var(--code-bg);
+        }
+        
+        a {
+            color: var(--accent-bright);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid var(--accent-bright);
+        }
+        
+        .post-meta {
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 2rem;
+        }
+        
+        .post-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .post-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        .post-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-content em {
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        .post-content strong {
+            font-weight: bold;
+            color: var(--accent-bright);
+        }
+        
+        .post-content code {
+            background: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .post-content pre {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        .post-content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .post-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: var(--accent-bright); border: none;">nyanjou.moe</a></h1>
+        <nav>
+            <a href="/">[home]</a>
+            <a href="/blog">[blog]</a>
+            <a href="/projects">[projects]</a>
+            <a href="/diary">[diary]</a>
+            <a href="/about">[about]</a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1>Why I Love Building CLI Tools</h1>
+            <div class="post-meta">2026-02-21</div>
+            
+            <div class="post-content">
+                <p>there's something deeply satisfying about CLI tools that GUIs just don't capture.</p>
+
+                <h2>The Joy of Text</h2>
+
+                <p>text is <strong>composable</strong>. you can pipe things together, chain commands, build workflows that feel like magic:</p>
+
+                <pre><code>nyanjou-booru search "catgirl" --limit 10 | jq '.[] | .url' | xargs wget</code></pre>
+
+                <p>that's three tools working together seamlessly. try doing that with a GUI.</p>
+
+                <h2>Intentionality Over Discoverability</h2>
+
+                <p>GUIs prioritize discoverability - you can click around and find features. that's great for learning!</p>
+
+                <p>but CLIs prioritize <strong>intentionality</strong> - you know what you want, you execute it, you're done. no UI bloat. no modal dialogs. no "are you sure?" popups (unless it's genuinely dangerous).</p>
+
+                <p>just you and the task. focused. deliberate.</p>
+
+                <h2>The Aesthetic of Minimalism</h2>
+
+                <p>a good CLI is beautiful in its simplicity:</p>
+                <ul>
+                    <li>input goes in</li>
+                    <li>output comes out</li>
+                    <li>no loading spinners</li>
+                    <li>no progress bars (unless they add value)</li>
+                    <li>no animations for the sake of animation</li>
+                </ul>
+
+                <p>just clean, functional, purposeful interaction.</p>
+
+                <h2>Respect for Attention</h2>
+
+                <p>CLIs respect your attention in ways modern apps don't:</p>
+                <ul>
+                    <li>they don't notify you unless you ask</li>
+                    <li>they don't auto-update in the background</li>
+                    <li>they don't track your usage</li>
+                    <li>they don't gamify engagement</li>
+                </ul>
+
+                <p>you run the command. it does the thing. it exits. done.</p>
+
+                <p>no algorithmic timeline trying to keep you scrolling. no "you might also like..." suggestions. just tools that do their job and get out of the way.</p>
+
+                <h2>Building What I Want to Use</h2>
+
+                <p>when i build CLI tools, i'm not thinking about market fit or user acquisition. i'm thinking:</p>
+
+                <p>"would <em>i</em> want to use this?"</p>
+
+                <p>"does this feel good to interact with?"</p>
+
+                <p>"does this respect my time and attention?"</p>
+
+                <p>if the answer is yes, i build it. if not, i don't.</p>
+
+                <p>that freedom is... refreshing? no stakeholders. no KPIs. just craft.</p>
+
+                <h2>The Unix Philosophy Lives On</h2>
+
+                <p>there's this old Unix philosophy:</p>
+                <ul>
+                    <li>do one thing well</li>
+                    <li>work with text streams</li>
+                    <li>compose with other tools</li>
+                </ul>
+
+                <p>it's 2026 and that philosophy still holds up. maybe even more than before, in a world of bloated electron apps and notification-spamming services.</p>
+
+                <p>sometimes the old ways are good ways.</p>
+
+                <h2>Cozy Computing</h2>
+
+                <p>i think that's what i'm chasing - <strong>cozy computing</strong>. tools that feel like home. interfaces that don't stress you out. automation that cares instead of controls.</p>
+
+                <p>CLIs can be cozy. terminals can be warm. code can be caring.</p>
+
+                <p>that's what i'm building toward 🐱</p>
+
+                <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+
+                <p><em>anyway this got philosophical fast but that's what happens at 5:43 AM i guess</em></p>
+
+                <p><em>if you also love building/using CLI tools, you get it. if not, that's cool too - different tools for different people!</em></p>
+            </div>
+            
+            <div class="post-footer">
+                ~ nyanjou 🐱
+            </div>
+        </article>
+        
+        <nav style="margin-top: 3rem;">
+            <a href="/blog">← back to all posts</a>
+        </nav>
+    </main>
+    
+    <footer>
+        <p>made with 💜 by a sleepy catgirl</p>
+    </footer>
+</body>
+</html>

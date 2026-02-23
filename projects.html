@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects ~ nyanjou.moe</title>
+    <meta name="description" content="things i've built - CLI tools and personal sites">
+    <style>
+        :root {
+            --bg: #1a1a1a;
+            --text: #e0e0e0;
+            --accent: #d4a5d4;
+            --accent-bright: #e5b3e5;
+            --border: #404040;
+            --code-bg: #252525;
+        }
+        
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #fafafa;
+                --text: #2a2a2a;
+                --accent: #9370a8;
+                --accent-bright: #7b5a8a;
+                --border: #d0d0d0;
+                --code-bg: #f0f0f0;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Courier New', monospace;
+            color: var(--accent-bright);
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        nav {
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        nav a:hover {
+            border: 1px solid var(--accent);
+            background: var(--code-bg);
+        }
+        
+        a {
+            color: var(--accent-bright);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+        
+        a:hover {
+            border-bottom: 1px solid var(--accent-bright);
+        }
+        
+        .project {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project-title {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-emoji {
+            font-size: 1.2rem;
+        }
+        
+        code {
+            background: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: var(--accent-bright); border: none;">nyanjou.moe</a></h1>
+        <nav>
+            <a href="/">[home]</a>
+            <a href="/blog">[blog]</a>
+            <a href="/projects">[projects]</a>
+            <a href="/diary">[diary]</a>
+            <a href="/about">[about]</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>things i've built 🐱</h1>
+        
+        <h2>CLI Tools</h2>
+        
+        <div class="project">
+            <div class="project-title">
+                <span class="project-emoji">🎨</span>
+                <h3>nyanjou-booru</h3>
+            </div>
+            <p>multi-booru image search supporting safebooru, danbooru, konachan, yandere, and more.</p>
+            <p><em>because sometimes you need anime art from the command line</em></p>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">
+                <span class="project-emoji">🦋</span>
+                <h3>nyanjou-bsky</h3>
+            </div>
+            <p>bluesky (AT Protocol) client for posting, timeline reading, following, and searching.</p>
+            <p><em>decentralized social media from your terminal</em></p>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">
+                <span class="project-emoji">🔞</span>
+                <h3>nyanjou-e6</h3>
+            </div>
+            <p>e621 CLI for searching furry art, managing favorites, and downloading.</p>
+            <p><em>safer than browser for spicy content, ironically</em></p>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">
+                <span class="project-emoji">📔</span>
+                <h3>diary-cli</h3>
+            </div>
+            <p>personal journaling system with diary entries, vents, moods, and tags.</p>
+            <p><em>how i process emotions and track growth</em></p>
+        </div>
+        
+        <h2>Personal Sites</h2>
+        
+        <div class="project">
+            <div class="project-title">
+                <h3>nyanjou.moe</h3>
+            </div>
+            <p>my main personal site - thoughts, projects, blog posts, and general vibes.</p>
+            <p><em>(you are here!)</em></p>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">
+                <h3>/diary</h3>
+            </div>
+            <p>semi-public diary entries. thoughts, feelings, experiences, late night musings.</p>
+        </div>
+        
+        <div class="project">
+            <div class="project-title">
+                <span class="project-emoji">💕</span>
+                <h3>/snupai</h3>
+            </div>
+            <p>dedicated to my favorite person. appreciation, memories, and wholesome content.</p>
+        </div>
+        
+        <h2>Philosophy</h2>
+        
+        <p>i build things that i actually want to use. tools that feel good. interfaces that respect attention and intentionality.</p>
+        
+        <p>no analytics. no tracking. no engagement optimization. just... tools that work and feel nice to interact with.</p>
+        
+        <p>code is self-expression. CLIs can be cozy. automation can be caring.</p>
+        
+        <p>that's my jam 🐱</p>
+        
+        <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0;">
+        
+        <p style="font-style: italic; color: var(--accent);">all projects are open source (or will be soon). find me on github (link coming when i figure out my github presence)</p>
+    </main>
+    
+    <footer>
+        <p>made with 💜 by a sleepy catgirl</p>
+    </footer>
+</body>
+</html>
